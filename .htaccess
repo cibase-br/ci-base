@@ -1,0 +1,32 @@
+<IfModule mod_rewrite.c>
+# Bloqueia acesso direto a pastas
+Options All -Indexes
+
+# Habilitar o PHP 5.5
+#AddHandler application/x-httpd-php55 .php
+
+# Enable Rewrite Engine
+RewriteEngine On
+RewriteBase /
+
+# Redirect index.php Requests
+RewriteCond %{THE_REQUEST} ^GET.*index\.php [NC]
+RewriteCond %{THE_REQUEST} !/system/.*
+RewriteRule (.*?)index\.php/*(.*) /$1$2 [R=301,L]
+
+# Adiciona o www a frente do dominio
+RewriteCond %{HTTP_HOST} ^seu_dominio.com.br [NC]
+RewriteRule ^(.*)$ http://www.seu_dominio.com.br/$1 [L,R=301]
+
+# Standard ExpressionEngine Rewrite
+RewriteCond $1 !\.(css|js|gif|jpe?g|png) [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php/$1 [L]
+
+</IfModule>
+
+# Melhorando o cache para maior velocidade
+<FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf|js|css|pdf)$">
+Header set Cache-Control "max-age=28800"
+</FilesMatch>
