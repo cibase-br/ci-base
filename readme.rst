@@ -1,4 +1,26 @@
 ###################
+Alterações Feitas
+###################
+
+Já está todo configurado, o .htaccess já está retirando o index.php da url e mais algumas coisas úteis.
+
+No padrão HMVC para criar novos módulos:
+- modules
+    - seu_modulo
+        - controllers
+            Seu_modulo.php
+        - models
+            Seu_model.php (o model pode ser criado também na pasta models em application/models)
+        - views
+            Sua_views.php
+
+Mais nada lhe impede de criar também dentro das pastas application/controllers e application/views.
+
+Para ver como está funcionando, a pasta welcome foi removida e inserida dentro da pasta application/modules
+
+Bom é isso ai, espero que seja útil!!!
+
+###################
 What is CodeIgniter
 ###################
 
