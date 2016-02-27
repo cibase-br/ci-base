@@ -1,3 +1,2 @@
-
-#Arquivos para não ser rastreados pelo git
-.idea/
+# Created by .ignore support plugin (hsz.mobi)
+.idea
