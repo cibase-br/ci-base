@@ -1,14 +1,11 @@
 {
-	"description": "The CodeIgniter framework",
+	"description": "CodeIgniter framework - HMVC",
 	"name": "codeigniter/framework",
 	"type": "project",
-	"homepage": "https://codeigniter.com",
+	"homepage": "https://github.com/cibase-br/ci-base",
 	"license": "MIT",
 	"support": {
-		"forum": "http://forum.codeigniter.com/",
-		"wiki": "https://github.com/bcit-ci/CodeIgniter/wiki",
-		"irc": "irc://irc.freenode.net/codeigniter",
-		"source": "https://github.com/bcit-ci/CodeIgniter"
+		"source": "https://github.com/cibase-br/ci-base"
 	},
 	"require": {
 		"php": ">=5.2.4"
