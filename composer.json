@@ -1,6 +1,6 @@
 {
 	"description": "CodeIgniter framework - HMVC",
-	"name": "codeigniter/framework",
+	"name": "cibase-br/ci-base",
 	"type": "project",
 	"homepage": "https://github.com/cibase-br/ci-base",
 	"license": "MIT",
